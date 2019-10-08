@@ -28,7 +28,7 @@ def items
   @items
 end
 
- def void_last_transaction(price, quanity)
+ def void_last_transaction
     self.total -= @last_trans
     end
 end
