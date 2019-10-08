@@ -31,6 +31,5 @@ end
 
  def void_last_transaction
  @total=  @total -= @last_trans
- @last_trans = 0
 end
 end
