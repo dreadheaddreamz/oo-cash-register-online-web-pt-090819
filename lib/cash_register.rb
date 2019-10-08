@@ -33,5 +33,3 @@ def void_last_transaction(price, quanity=1)
   @total -= @last_trans
 end
 end
-
-end
