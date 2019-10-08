@@ -27,5 +27,8 @@ def items
   @items
 end
 
+def void_last_trasaction
+  @total = 
+
 
 end
