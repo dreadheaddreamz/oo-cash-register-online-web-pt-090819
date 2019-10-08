@@ -30,6 +30,8 @@ def items
 end
 
  def void_last_transaction
-   self.total -= last_trans
-    end
+  @last_trans = 
+  @totl -= @last_trans
+  @last_trans = 0
+end
 end
