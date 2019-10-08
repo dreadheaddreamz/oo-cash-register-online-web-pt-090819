@@ -9,6 +9,7 @@ class CashRegister
   
   def add_item(title,price, quanity=1)
     self.total += (price * quanity)
+    self.last_trans = self.total
     quanity.times do
       @items << title
     end
@@ -27,8 +28,9 @@ def items
   @items
 end
 
-def void_last_trasaction
-  @total = 
-
+def void_last_trasaction(price, quanity=1)
+  @last_trans = price * quanity
+  @total -= @last_trans
+end
 
 end
