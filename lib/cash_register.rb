@@ -9,8 +9,9 @@ class CashRegister
   
   def add_item(title,price, quanity=1)
     self.total += (price * quanity)
-    quanity.times do
-    @itmes << title
+    while quanity > 0
+    @items << title
+    quanity -= 1
     end
   end
   
