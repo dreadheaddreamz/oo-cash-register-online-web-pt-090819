@@ -5,12 +5,11 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
-    @last_trans = 0
-  end
+   end
   
   def add_item(title,price, quanity=1)
     self.total += (price * quanity)
-    self.last_trans = self.total
+    #self.last_trans = self.total
     quanity.times do
       @items << title
     end
